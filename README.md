@@ -28,7 +28,7 @@ A comprehensive AI-powered workforce prediction system that analyzes labor marke
 
 ### Step 1: Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/Safaaab/fow-sim.git
 cd fow-sim
 ```
 

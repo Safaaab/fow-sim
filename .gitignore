@@ -7,13 +7,6 @@ __pycache__/
 .venv/
 venv/
 
-# Data (keep raw CSVs for CI, ignore large/generated files)
-data/interim/
-data/processed/
-# Keep raw external datasets but ignore any large downloads
-data/raw/*.parquet
-data/raw/*.zip
-
 # Notebooks
 .ipynb_checkpoints/
 

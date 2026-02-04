@@ -1,0 +1,15 @@
+# Environment variables for FoW-Sim
+
+# Watson NLU Configuration (optional)
+WATSON_NLU_API_KEY=your_watson_api_key_here
+WATSON_NLU_URL=your_watson_service_url_here
+
+# API Configuration
+API_HOST=0.0.0.0
+API_PORT=8000
+
+# Dashboard Configuration
+DASHBOARD_PORT=8501
+
+# Logging
+LOG_LEVEL=INFO

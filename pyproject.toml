@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fowsim"
+version = "0.1.0"
+description = "Future of Work Scenario Simulator: data pipeline + forecasting + scenario simulation + dashboard"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "pyarrow>=14.0",
+  "pydantic>=2.0",
+  "requests>=2.31",
+  "scikit-learn>=1.3",
+  "statsmodels>=0.14",
+  "plotly>=5.18",
+  "streamlit>=1.31",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "ruff>=0.4",
+  "mypy>=1.8",
+  "types-requests>=2.31",
+]
+# Optional: enable these if you want stronger ML models
+ml = [
+  "lightgbm>=4.0.0",
+  "xgboost>=2.0.0",
+]
+api = [
+  "fastapi>=0.110",
+  "uvicorn>=0.27",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
